@@ -1,108 +1,607 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Hi this is zak, and this is old code written before 5 years while I was backend developer and just updated few things temporarily
+This particular code doesn't follow any standards and will be scrapped in the coming months, this needs huge change, too much inline css, no sematics, no pattern in js, all are declared as global,
+and you can find all the mess here-->
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zakir Elahi | Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; background: #f4f4f4; }
-    header { background: #333; color: #fff; padding: 2rem 1rem; text-align: center; }
-    nav a { color: #fff; margin: 0 1rem; text-decoration: none; }
-    section { padding: 2rem; background: #fff; margin: 1rem auto; max-width: 900px; border-radius: 8px; }
-    h2 { color: #333; }
-    ul { list-style: none; padding: 0; }
-    .skills span { display: inline-block; background: #e3e3e3; margin: 5px; padding: 5px 10px; border-radius: 5px; }
-    footer { background: #333; color: #fff; text-align: center; padding: 1rem; }
-    .contact a { display: inline-block; margin: 5px; color: #333; text-decoration: none; }
-  </style>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="x-ua-compatible" content="IE=9"/><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zak</title>
+    <meta name="description" content="You can find personal and professional information about zakir">
+    <meta name="keywords" content="About zakir, zakir resume, zakir personal info, zakir professional info">
+
+
+    <link rel="shortcut icon" href="img/zakir.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+
+    <!-- animation -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+
+
+    <!-- my styls -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400'
+          rel='stylesheet' type='text/css'>
+
+
 </head>
-<body>
-  <header>
-    <h1>Zakir Elahi</h1>
-    <p>Senior Software Engineer | ReactJS | Node.js | JavaScript | TypeScript</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+
+<div>
+    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Zak</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#tf-home" class="page-scroll">Home</a></li>
+                    <li><a href="#tf-about" class="page-scroll">About</a></li>
+                    <li><a href="#tf-skills" class="page-scroll">Skills</a></li>
+                    <li><a href="#tf-professional-experience" class="page-scroll">Portfolio</a></li>
+                    <li><a href="#tf-hobbies" class="page-scroll">Hobbies</a></li>
+                    <li><a href="#tf-reachme" class="page-scroll">Reach Me</a></li>
+
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>With 10+ years of experience in software engineering, I specialize in building scalable web applications using ReactJS and Node.js. Passionate about creating intuitive UIs and delivering high-performance, maintainable solutions.</p>
-  </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>ReactJS</span><span>Redux</span><span>JavaScript</span><span>TypeScript</span>
-      <span>HTML</span><span>CSS</span><span>Node.js</span><span>Jest</span>
-      <span>Docker</span><span>Webpack</span><span>Splunk</span><span>GitHub</span>
-      <span>System Design</span><span>Mentoring</span><span>Jenkins</span><span>AWS</span>
+    <div id="tf-home" class="text-center">
+        <div class="overlay">
+            <div class="animatedParent content">
+                <h1 class="animated fadeInDown"><strong><span class="color">zakir</span></strong></h1>
+                <p class="lead animated fadeInUp">I craft <strong>HandSome Sites and Stunning Apps</strong> that empower
+                    your <strong>Company</strong></p>
+                <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <ul>
-      <li>
-        <strong>Senior Software Engineer | Wells Fargo</strong> (2020–Present)
-        <ul>
-          <li>Developed Premier Account Upgrade and Account Closure Modules</li>
-          <li>Led migration from legacy systems to React functional components</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Lead Software Engineer | Informatica</strong> (2019–2020)
-        <ul>
-          <li>Led Layout Module implementation for MDM.Next</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Senior Software Engineer | Happay (MakeMyTrip)</strong> (2018–2019)
-        <ul>
-          <li>Developed Travel and Hotels module from scratch</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Development Engineer | Pramati Technologies</strong> (2015–2016)
-        <ul>
-          <li>Created UI for Quantiply, improving productivity by 35%</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Member Technical Staff | Zoho</strong> (2012–2014)
-        <ul>
-          <li>Worked on Zoho Analytics, enhanced tabular/chart features</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Premier Account Upgrade</strong> – ReactJS, Node.js, Webpack – Scaled to 900K+ users</li>
-      <li><strong>Happay Travel & Hotels Module</strong> – End-to-end travel booking platform for corporates</li>
-      <li><strong>MDM.Next Layout Builder</strong> – Dynamic entity layout configuration module</li>
-    </ul>
-  </section>
+    <!-- zak About section -->
+</div>
+<div id="tf-about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 fadeUpMat">
+                <img src="img/MyMac.jpeg" class="img-responsive">
+            </div>
+            <div class="col-md-6 fadeDownPic">
+                <div class="about-text">
+                    <div class="zakir-small-img">
+                        <img alt="zakir" style="width:85px; height: 85px;" title="zakir" src="img/smallZ.png">
+                    </div>
+                    <div class="section-title">
+                        <h2>Some words <strong>about Me</strong></h2>
+                        <hr>
+                        <div class="clearfix"></div>
+                    </div>
+                    <p class="intro"><b>All round Web Develper with 6+ years of exp</b>, loves to work with latest
+                        technologies, having worked in quite a few projects using React.js, Redux, Javascript, Html, Css
+                        on top of many other programming languages and frameworks.
+                    </p>
+                    <p> I love structure and order and I also stand for quality. Loves spending time on fixing little
+                        details and optimizing web apps.</p>
+                    <p>
+                        You will find me wired in all the time, shifting the playlist from jazz, to indie pop, to
+                        electronica, on what seems to be a never-ending search for the perfect tunes to keep me in the
+                        zone.
+                        Forgot to mention, I am a sport addict playing endless badminton matches under the ligths.
+                    </p>
+                    <p>Apart from the above, I am a movie buff. More fascinated towards comedy movies but forced to
+                        watch Action Stuff by my friends.
+                    </p>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p class="contact">
-      📧 <a href="mailto:zakirelahiks@gmail.com">zakirelahiks@gmail.com</a><br>
-      📱 <a href="tel:+917989636170">+91 7989636170</a><br>
-      🔗 <a href="https://www.linkedin.com/in/zakirelahi" target="_blank">LinkedIn</a><br>
-      💻 <a href="https://github.com/Zakir289" target="_blank">GitHub</a><br>
-      🌐 <a href="http://www.shaikzakir.co.in/AboutMe.html" target="_blank">Personal Website</a>
-    </p>
-  </section>
 
-  <footer>
-    &copy; 2025 Zakir Elahi. Built with HTML, CSS, JS.
-  </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--zak skills section -->
+<div id="tf-skills">
+    <div class="container">
+        <div class="text-center">
+            <div class="col-md-6 col-md-offset-3">
+
+                <h2><strong>skills</strong></h2>
+                <hr class="center-underline">
+                <div class="clearfix"></div>
+                <p class="lead">Next to my effective Communication, The below one are my assets</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row tech-skills" style="display:flex">
+            <div class="col-sm-3 wow  animated" data-wow-duration="1000ms" data-wow-delay="300ms"
+                 style="visibility: visible;-webkit-animation-duration: 1000ms; -moz-animation-duration: 1000ms; animation-duration: 1000ms;-webkit-animation-delay: 300ms; -moz-animation-delay: 300ms; animation-delay: 300ms;">
+                <div class="progress progress-striped active">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                        JavaScript
+                    </div>
+                </div>
+                <div class="progress progress-striped active">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                         aria-valuemax="100" style="width: 80%">
+                        Redux
+                    </div>
+                </div>
+                <div class="progress progress-striped active">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        HTML
+                    </div>
+                </div>
+                <div class="progress progress-striped active">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                        Webpack
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 wow  animated" data-wow-duration="1000ms" data-wow-delay="300ms"
+                 style="visibility: visible;-webkit-animation-duration: 1000ms; -moz-animation-duration: 1000ms; animation-duration: 1000ms;-webkit-animation-delay: 300ms; -moz-animation-delay: 300ms; animation-delay: 300ms;">
+                <div class="progress progress-striped active">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                        React Js
+                    </div>
+                </div>
+                <div class="progress progress-striped active">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                         aria-valuemax="100" style="width:85%">
+                        Context
+                    </div>
+                </div>
+                <div class="progress progress-striped active">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                        CSS
+                    </div>
+                </div>
+                <div class="progress progress-striped active">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                        Github
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 wow  animated" data-wow-duration="1000ms" data-wow-delay="600ms"
+                 style="visibility: visible;-webkit-animation-duration: 1000ms; -moz-animation-duration: 1000ms; animation-duration: 1000ms;-webkit-animation-delay: 600ms; -moz-animation-delay: 600ms; animation-delay: 600ms;">
+                <div class="accordion">
+                    <div class="panel-group" id="accordion1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading active">
+                                <h3 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1"
+                                       href="#collapseOne1" style="color:white">
+                                        Languages
+                                        <i class="fa fa-angle-right pull-right"></i>
+                                    </a>
+                                </h3>
+                            </div>
+
+                            <div id="collapseOne1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="media accordion-inner">
+                                        <div class="media-body">
+                                            <p>I started my career as a Fullstack develper, Then dived into other
+                                                languages </p>
+                                            <p class="bold-font"> JavaScript, Ruby, Java</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1"
+                                       href="#collapseTwo1">
+                                        Frameworks
+                                        <i class="fa fa-angle-right pull-right"></i>
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapseTwo1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>These were some frameworks that i came across my journey, Currently I am Complete
+                                        frontend developer.</p>
+                                    <p class="bold-font">Angular, Express, Ruby on Rails,Spring, Struts2, Hibernate</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1"
+                                       href="#collapseThree1">
+                                        Front-end
+                                        <i class="fa fa-angle-right pull-right"></i>
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapseThree1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>After being a Full stack developer, I was fascinated more towards front-end stuff
+                                        :)</p>
+
+                                    <p class="bold-font"> JavaScipt, React, Redux, HTML, Bootstrap, Angular 4, Angular
+                                        1.3 ...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1"
+                                       href="#collapseFour1">
+                                        Other Stuff
+                                        <i class="fa fa-angle-right pull-right"></i>
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapseFour1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Working at Startup's I got introduced to deployment and few other necessery
+                                        configurations</p>
+
+                                    <p class="bold-font"> Nginx, Tomcat, Jenkins, AWS, Github, Perforce, Webpack, Maven,
+                                        Software Design, BI, Algorithms, DS, Problem solving, Intellij idea</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- zak professional experience section-->
+<div id="tf-professional-experience">
+    <section id="service" class="home-section-professional color-dark bg-gray-professional">
+        <div class="container marginbot-50">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div>
+                        <div class="section-heading text-center">
+                            <h2 class="h-bold-professional">I Worked for:</h2>
+                            <div class="divider-header"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center">
+            <div class="container">
+                <div class="row animatedParent flex-box">
+                    <div class="col-xs-6 col-sm-6 col-md-3 width-30">
+                        <div class="animated-portfolio rotateInDownLeft slow go">
+                            <a href="#informatica-experience" class="Portfolio">
+                                <div class="service-box" style="padding-bottom:21px">
+                                    <img src="img/informatica-logo.png" class="cmp-logo" style="margin-top: 7px;">
+                                    <h5>Informatica </h5>
+                                    <p>
+                                        <b>Engineer,</b>
+                                        Worked with MDM.Next team which helps to provide master customer data to Companies to make better business decisions.
+                                    </p>
+                                    <div class="view-exp"> view</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 width-30">
+                        <div class="animated-portfolio rotateInDownLeft slow go">
+                            <a href="#happay-experience" class="Portfolio">
+                                <div class="service-box" style="padding-bottom:21px">
+                                    <img src="img/happay-original.svg" class="cmp-logo" style="margin-top: 7px;">
+                                    <h5>Happay</h5>
+                                    <p>
+                                        <b>Engineer, </b>
+                                        Built the Complete Happay Travel module which helps employees to books hotels and flights according to company policies.
+                                    </p>
+                                    <div class="view-exp"> view</div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 width-30">
+                        <div class="animated-portfolio rotateInDownLeft slower go">
+                            <a href='#zoho-experience' class="Portfolio">
+                                <div class="service-box pt-31" style="padding-bottom:20px">
+                                    <img src="img/logo-apps-office-zoho.png" style="height:80px;width:120px">
+                                    <p>
+                                         <b>Engineer, </b> part of Zoho Reports,  Online Reporting and Business
+                                        Intelligence tool where I have added new features for better visualization and slicing the data.
+                                    </p>
+                                    <div class="view-exp mt-47"> view</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<!--informatica experience-->
+<div id="informatica-experience" class="experience-tab">
+    <div class="container white-background">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+
+                <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 column">
+                    <h2 class="experience"> Informatica</h2>
+
+                    <p class="centered"></p>
+                    <a href="https://www.informatica.com/in/products/master-data-management.html">
+                        <img src="img/informatica.png" class="img-responsive">
+                    </a>
+                </div>
+
+                <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 column">
+
+                    <h4 class="mb5">
+                        About
+                    </h4>
+                    <p class="mb25">
+                        MDM.Next helps to provide clean, consistent, and connected information about customers So that business managers can use the master customer data to make better business decisions about customers and manage customer relationships.
+                    </p>
+
+                    <h4>
+                        Role
+                    </h4>
+                    <p>
+                    <ul style="margin-left:16px">
+                        <li>
+                            Part of building the Layout Module, where users can configure the fields of any entity with complex data in an easy way.
+                        </li>
+                        <li>
+                            Developed and integrated the importing Module, where users can import data for a particular entity and provide the configurations of the data and preview it.
+
+                        </li>
+                        <li>
+                            Developed the View and Cross reference modules where users can view their data according to configuration and check the records that got matched.
+                        </li>
+
+                    </ul>
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Happay -->
+<div id="happay-experience" class="experience-tab">
+    <div class="container white-background">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 column">
+                    <h2 class="experience"> Happay</h2>
+                    <p class="centered"></p>
+                    <a href="https://happay.in/">
+                        <img src="img/integeration.svg" class="img-responsive">
+                    </a>
+                </div>
+
+                <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 column">
+
+                    <h4 class="mb5">
+                        About
+                    </h4>
+                    <p class="mb25">
+                        Happay-Travel is one of the core modules in Happay Expense Management. Happay-Travel will drastically reduce the efforts to book flights and hotels for the Customer. It helps the customer’s choose the travel option with their company policy and take care of complete approval cycle.
+                    </p>
+
+                    <h4>
+                        Role
+                    </h4>
+                    <p>
+                    <ul style="margin-left:16px">
+                        <li>
+                            Developed the complete cycle of Hotel’s Module where users can search the hotel’s across the globe and book it depending on their company policies.
+                        </li>
+                        <li>
+                            Building the Bookings Module where users Manage his booking and start the workflow process.
+                        </li>
+                        <li>
+                            Played a crucial role in improving the performance of expense and travel modules.
+                        </li>
+                        <li>
+                            Mentoring and collaborating the team to develop the complete Travel module.
+                        </li>
+                    </ul>
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Zoho experience -->
+<div id="zoho-experience" class="experience-tab">
+    <div class="container white-background">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+
+                <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 column">
+                    <h2 class="experience"> Zoho Reports</h2>
+
+                    <p class="centered"> Online Reporting and Business Intelligence</p>
+                    <a href="https://www.zoho.com/reports/">
+                        <img src="img/ZReports.png" class="img-responsive zreports-logo">
+                    </a>
+                </div>
+
+                <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 column">
+
+                    <h4 class="mb5">
+                        About
+                    </h4>
+                    <p class="mb25">
+                        Zoho Reports is an online reporting and business intelligence service that helps to easily
+                        analyze the business data and create insightful reports & dashboards for informed
+                        decision-making. It allows to easily create and share powerful reports in minutes with no IT
+                        help.
+                    </p>
+
+                    <h4>
+                        Role
+                    </h4>
+                    <p>
+                    <ul style="margin-left:16px">
+                        <li>
+                            Worked mostly with decorating the charts with Jfreechart library.
+                        </li>
+                        <li>
+                            Enhanced the features of Tabular Reports with defect fixing and testing across browser.
+                        </li>
+                        <li>
+                            Designed and Developed Multi category charts both in graphical and tabular view.
+                        </li>
+                        <li>
+                            Involved in writing Automation scripts using Javascript for automated testing of the
+                            product.
+                        </li>
+                        <li>
+                            Testing the product from end to end and fixing the bugs.
+                        </li>
+                        <li>Handling Customer Support in understanding requirements and guiding them to write queries to
+                            fetch the data.
+                        </li>
+
+                    </ul>
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!--zak hobbies section -->
+<div id="tf-hobbies">
+    <section id="separator" class="home-section parallax text-center" data-stellar-background-ratio="0.5"
+             style="opacity:0.6">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="align-center txt-shadow">
+                        <div class="icon">
+                            <i class="fa  fa-headphones fa-5x"></i>
+                        </div>
+                        <span class="color-white">Wired in</span>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="align-center txt-shadow">
+                        <div class="icon">
+                            <i class="fa fa-dribbble fa-5x"></i>
+                        </div>
+                        <span class="color-white">sports</span>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="align-center txt-shadow">
+                        <div class="icon">
+                            <i class="fa fa-plane fa-5x"></i>
+                        </div>
+                        <span class="color-white">Traveling</span>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="align-center txt-shadow">
+                        <div class="icon">
+                            <i class="fa fa-camera fa-5x"></i>
+                        </div>
+                        <span class="color-white">Photography</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- zak social Networking -->
+
+<div id="tf-reachme" class="container social-section">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="social-heading">These days every one has two faces and <br/> Here is my second one</h2>
+            <div class="col-md-6 .col-md-offset-3">
+                <ul class="social">
+                    <li class="facebook"><a href="http://www.facebook.com/zakir.ks"><i class="fa fa-facebook fa-3x"></i></a>
+                    </li>
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+                    <li class="linkdin"><a href="http://in.linkedin.com/in/zakirelahi"><i
+                            class="fa  fa-linkedin fa-3x"></i></a></li>
+                    <li class="github"><a href="http://github.com/Zakir289?tab=repositories"><i
+                            class="fa fa-github fa-3x"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="chennai">
+    <div class="container">
+        <div class="row centered" style="color: #767676;">
+            <div class="col-md-8 col-md-offset-2">
+                <h1 class="address">I live in the <b> Silicon valley of India</b></h1>
+                <h3 class="mb">You can spot me at shopping malls, hangout places<br> chatting with friends .</h3>
+                <h2 class="Hakuna-Matata"> (Hakuna Matata)</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
+
+
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/css3-animate-it.js"></script>
 </html>
