@@ -60,7 +60,10 @@
      document.body.appendChild(modal);
    }
   }
-  blockMobile()
+  // Run on page load
+window.addEventListener('DOMContentLoaded', blockMobile);
+// Run on window resize
+window.addEventListener('resize', blockMobile);
 
 
 }());
